@@ -1,59 +1,61 @@
 <html>
-  <head>
+
+<head>
     <title>JSES3</title>
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.min.js"
-      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <!-- Start Styles. Move the 'style' tags and everything between them to between the 'head' tags -->
     <style type="text/css">
-      .sexyPoglianiTable {
-        background-color: #ffffe0;
-        border-collapse: collapse;
-        color: #000;
-        font-size: 18px;
-      }
-      .sexyPoglianiTable th {
-        background-color: #bdb76b;
-        color: white;
-        /* width: 50%; */
-      }
-      .sexyPoglianiTable td,
-      .sexyPoglianiTable th {
-        padding: 5px;
-        border: 0;
-      }
-      .sexyPoglianiTable td {
-        border-bottom: 1px dotted #bdb76b;
-      }
+        .sexyPoglianiTable {
+            background-color: #ffffe0;
+            border-collapse: collapse;
+            color: #000;
+            font-size: 18px;
+        }
+
+        .sexyPoglianiTable th {
+            background-color: #bdb76b;
+            color: white;
+            /* width: 50%; */
+        }
+
+        .sexyPoglianiTable td,
+        .sexyPoglianiTable th {
+            padding: 5px;
+            border: 0;
+        }
+
+        .sexyPoglianiTable td {
+            border-bottom: 1px dotted #bdb76b;
+        }
     </style>
-  </head>
-  <body>
+</head>
+
+<body>
     <h1 style="color: rgb(209, 25, 25)">JSES3</h1>
     <h2>JQuery calculator</h2>
     <div>
-      <table class="sexyPoglianiTable">
-        <th>ID</th>
-        <th>N1</th>
-        <th>SIGN</th>
-        <th>N2</th>
-        <th>RES</th>
-        <tr>
-          <td>1</td>
-          <td>4</td>
-          <td>/</td>
-          <td>2</td>
-          <td>2</td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>7</td>
-          <td>*</td>
-          <td>3</td>
-          <td>21</td>
-        </tr>
-      </table>
+        <table class="sexyPoglianiTable">
+            <th>ID</th>
+            <th>N1</th>
+            <th>SIGN</th>
+            <th>N2</th>
+            <th>RES</th>
+            <tr>
+                <td>1</td>
+                <td>4</td>
+                <td>/</td>
+                <td>2</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>7</td>
+                <td>*</td>
+                <td>3</td>
+                <td>21</td>
+            </tr>
+        </table>
     </div>
     <br /><br />
     <input type="number" id="N1" placeholder="first number" />
@@ -65,13 +67,19 @@
     <button id="btn3">*</button>
     <button id="btn4">/</button>
     <script>
-      $("#btn1").click(function() {
-        var n1 = +($("#N1").val());
-        var n2 = +($("#N2").val());
-        //alternativa --> console.log(n1 -(-n2));
-        console.log(n1 + n2);
-        console.log("<tr><td>3</td><td>"+n1+"</td><td>+</td><td>"+n2+"</td><td>"+(n1 + n2)+"</td></tr>");
-      });
+        $("#btn1").click(function () {
+            var n1 = +($("#N1").val());
+            var n2 = +($("#N2").val());
+            //alternativa --> console.log(n1 -(-n2));
+            console.log(n1 + n2);
+            $("#table")[0].append(
+            console.log("<tr><td>"+count+"</td><td>" + 
+                n1 + "</td><td>+</td><td>" +
+                n2 + "</td><td>" +
+                (n1 + n2) + "</td></tr>")
+            );
+        });
     </script>
-  </body>
+</body>
+
 </html>
