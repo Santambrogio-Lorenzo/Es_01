@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <title>JSES01</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <h1 style="color:blue">JSES01<h1>
+            <div style='margin:5px; padding:10px; background-color:lightskyblue'>
+                <h2>Jquery calculator</h2>
+            </div>
+            <div>
+                <table>
+                    <th>ID</th>
+                    <th>N1</th>
+                    <th>SIGN</th>
+                    <th>N2</th>
+                    <th>RES</th>
+                    <tr>
+                        <td>2</td>
+                        <td>7</td>
+                        <td>*</td>
+                        <td>3</td>
+                        <td>21</td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <input type="number" id="N1" placeholder="first number"></input>
+                </br>
+                <input type="number" id="N2" placeholder="second number"></input>
+            </div>
+            </br>
+            <button id="btn+">+</button>
+            <button id="btn-">-</button>
+            <button id="btn*">*</button>
+            <button id="btn/">/</button>
+            <script>
+             var N1 = $("#N1").val();
+             var N2 = $("#N2").val();
+             $("#btn+").click(function(){
+                 console.log(n1+n2);
+             })
+            </script>
+</body>
+
+</html>
