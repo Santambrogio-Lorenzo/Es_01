@@ -4,7 +4,6 @@
     <title>JSES3</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <!-- Start Styles. Move the 'style' tags and everything between them to between the 'head' tags -->
     <style type="text/css">
         .sexyPoglianiTable {
             background-color: #ffffe0;
@@ -16,7 +15,6 @@
         .sexyPoglianiTable th {
             background-color: #bdb76b;
             color: white;
-            /* width: 50%; */
         }
 
         .sexyPoglianiTable td,
@@ -32,7 +30,7 @@
 </head>
 
 <body>
-    <h1 style="color: rgb(209, 25, 25)">JSES3</h1>
+    <h1 style="color: rgb(0, 204, 255)">JSES3</h1>
     <h2>JQuery calculator</h2>
     <div>
         <table class="sexyPoglianiTable">
@@ -66,20 +64,7 @@
     <button id="btn2">-</button>
     <button id="btn3">*</button>
     <button id="btn4">/</button>
-    <script>
-        $("#btn1").click(function () {
-            var n1 = +($("#N1").val());
-            var n2 = +($("#N2").val());
-            //alternativa --> console.log(n1 -(-n2));
-            console.log(n1 + n2);
-            $("#table")[0].append(
-            console.log("<tr><td>"+count+"</td><td>" + 
-                n1 + "</td><td>+</td><td>" +
-                n2 + "</td><td>" +
-                (n1 + n2) + "</td></tr>")
-            );
-        });
-    </script>
+    <script src="es_02.js"></script>
+    <script>window.alert("Error enter all numbers")</script>  
 </body>
-
 </html>
